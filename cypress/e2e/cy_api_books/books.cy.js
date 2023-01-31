@@ -1,6 +1,5 @@
 import { faker } from "@faker-js/faker";
 
-//const baseUrl = "https://f4hatlr72b.execute-api.us-east-1.amazonaws.com/production";
 const randomBookId = faker.datatype.uuid();
 const randomAuthor = faker.name.fullName();
 const randomTitle = faker.random.words();
