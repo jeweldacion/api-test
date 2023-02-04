@@ -65,4 +65,13 @@ describe("Books", () => {
       expect(response.body.message).to.equal("Book was removed successfully");
     });
   });
+
+  it("Should get a books", () => {
+    cy.request("/" + `/${responseBookId}`).then((response) => {
+      expect(response.status).to.eq(200);
+      expect(responseTitle).to.equal(randomTitle);
+      expect(responseAuthor).to.equal(randomAuthor);
+      expect(responseBookId.length).to.equal(32);
+    });
+  });
 });
