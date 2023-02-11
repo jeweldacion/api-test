@@ -66,7 +66,7 @@ describe("Books", () => {
     });
   });
 
-  it("Should get a books", () => {
+  it("Should", () => {
     cy.request("/" + `/${responseBookId}`).then((response) => {
       expect(response.status).to.eq(200);
       expect(responseTitle).to.equal(randomTitle);
