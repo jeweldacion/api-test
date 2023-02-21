@@ -74,4 +74,13 @@ describe("Books", () => {
       expect(responseBookId.length).to.equal(32);
     });
   });
+
+  it("Delek Homes", () => {
+    cy.request("/" + `/${responseBookId}`).then((response) => {
+      expect(response.status).to.eq(200);
+      expect(responseTitle).to.equal(randomTitle);
+      expect(responseAuthor).to.equal(randomAuthor);
+      expect(responseBookId.length).to.equal(32);
+    });
+  });
 });
