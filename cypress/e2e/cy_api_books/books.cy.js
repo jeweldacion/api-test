@@ -75,7 +75,9 @@ describe("Books", () => {
     });
   });
 
-  it("Delek Homes", () => {
+  it("Should create a user", () => {
+
+    
     cy.request("/" + `/${responseBookId}`).then((response) => {
       expect(response.status).to.eq(200);
       expect(responseTitle).to.equal(randomTitle);
