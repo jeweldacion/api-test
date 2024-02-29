@@ -11,5 +11,5 @@
 
 ## How to run test
 
-Non-headless - `npx cypress open`
+Non-headless - `npx cypress open`\
 Headless - `npx cypress run`
